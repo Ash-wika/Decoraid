@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api, { getImageUrl } from '../utils/api';
 import { Plus, Clock, Trash2, Eye, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -18,7 +18,7 @@ const Dashboard = () => {
 
         const fetchHistory = async () => {
             try {
-                const res = await axios.get(`/api/design/history/${user.id}`);
+                const res = await api.get(`/api/design/history/${user.id}`);
                 setHistory(res.data);
             } catch (err) {
                 console.error('Failed to fetch history', err);
@@ -32,7 +32,7 @@ const Dashboard = () => {
         e.stopPropagation();
         if (window.confirm('Are you sure you want to delete this design?')) {
             try {
-                await axios.delete(`/api/design/${id}`);
+                await api.delete(`/api/design/${id}`);
                 setHistory(history.filter(item => item.id !== id));
             } catch (err) {
                 console.error('Failed to delete design', err);
@@ -70,7 +70,7 @@ const Dashboard = () => {
                         <div key={design.id} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-stone-100 group relative">
                             <div className="relative h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedDesign(design)}>
                                 <img
-                                    src={design.generated_image.startsWith('http') ? design.generated_image : `/uploads/${design.generated_image}`}
+                                    src={getImageUrl(design.generated_image.startsWith('http') ? design.generated_image : `/uploads/${design.generated_image}`)}
                                     alt={design.theme}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
@@ -143,7 +143,7 @@ const Dashboard = () => {
                                         </h3>
                                         <div className="rounded-xl overflow-hidden bg-stone-100 aspect-video">
                                             <img
-                                                src={`/uploads/${selectedDesign.original_image}`}
+                                                src={getImageUrl(`/uploads/${selectedDesign.original_image}`)}
                                                 alt="Original"
                                                 className="w-full h-full object-cover"
                                             />
@@ -155,7 +155,7 @@ const Dashboard = () => {
                                         </h3>
                                         <div className="rounded-xl overflow-hidden bg-stone-100 aspect-video shadow-lg ring-1 ring-black/5">
                                             <img
-                                                src={selectedDesign.generated_image.startsWith('http') ? selectedDesign.generated_image : `/uploads/${selectedDesign.generated_image}`}
+                                                src={getImageUrl(selectedDesign.generated_image.startsWith('http') ? selectedDesign.generated_image : `/uploads/${selectedDesign.generated_image}`)}
                                                 alt="Generated"
                                                 className="w-full h-full object-cover"
                                             />

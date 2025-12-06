@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from '../utils/api';
 
 const AuthPage = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -18,7 +18,7 @@ const AuthPage = () => {
 
         try {
             const payload = isLogin ? { email, password } : { name, email, password };
-            const res = await axios.post(endpoint, payload);
+            const res = await api.post(endpoint, payload);
             localStorage.setItem('user', JSON.stringify(res.data));
             navigate('/dashboard');
         } catch (err) {

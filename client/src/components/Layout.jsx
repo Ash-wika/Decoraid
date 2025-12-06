@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Home, Layout as LayoutIcon, History, LogOut, User, Trash2, ChevronDown, X } from 'lucide-react';
-import axios from 'axios';
+import api from '../utils/api';
 
 const Layout = ({ children }) => {
     const location = useLocation();
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 
     const handleDeleteAccount = async () => {
         try {
-            await axios.post('/api/auth/delete', { userId: user.id, password: deletePassword });
+            await api.post('/api/auth/delete', { userId: user.id, password: deletePassword });
             localStorage.removeItem('user');
             setShowDeleteModal(false);
             navigate('/');

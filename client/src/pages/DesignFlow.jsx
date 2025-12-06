@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api, { getImageUrl } from '../utils/api';
 import { Upload, Ruler, Palette, Check, ArrowRight, Loader2 } from 'lucide-react';
 
 const themes = [
@@ -43,7 +43,7 @@ const DesignFlow = () => {
         if (user) formData.append('userId', user.id);
 
         try {
-            const res = await axios.post('/api/design/generate', formData, {
+            const res = await api.post('/api/design/generate', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             setResult(res.data);
@@ -172,7 +172,7 @@ const DesignFlow = () => {
                             <div className="bg-white p-4 rounded-2xl shadow-sm ring-2 ring-amber-100">
                                 <h3 className="font-bold mb-4 text-amber-600">AI Redesign</h3>
                                 <img
-                                    src={result.generatedImage.startsWith('http') ? result.generatedImage : `/uploads/${result.generatedImage}`}
+                                    src={getImageUrl(result.generatedImage.startsWith('http') ? result.generatedImage : `/uploads/${result.generatedImage}`)}
                                     alt="Generated"
                                     className="w-full rounded-lg"
                                 />
