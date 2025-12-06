@@ -1,0 +1,29 @@
+Testing Gemini Integration...
+Testing with image: C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\uploads\1764696218444-bedroom_minimalist_33.jpg
+1. Testing generateRoom (Expect fallback/mock)...
+Gemini Renovation Description: **Objective:** Maximize space in the 10x10 footprint while transitioning the organic aesthetic to a sleek, contemporary Modern theme.
+
+1.  **Feature Wall:** Install a matte, vertical fluted panel wall (white or light gray) behind the bed for clean texture and dimension.
+2.  **Integrated Storage:** Replace freestanding nightstands with custom, low-profile, wall-mounted drawers in a dark taupe lacquer finish to maximize floor space.
+3.  **Lighting & Furnishings:** Swap the wood bed frame for a streamlined, low-profile upholstered platform bed. Replace table lamps with minimal, black metal adjustable pendant lights or recessed LED strips integrated into the fluted feature wall.
+4.  **Flooring:** Refinish the floors to a bleached, wide-plank oak or install large-format, light gray concrete-effect tiles.
+Generate Result: generated-gemini-1764701653679.jpg
+2. Testing estimateCost (Expect JSON result)...
+Cost Result: [
+  {
+    "item": "Wood Bed Frame (Queen)",
+    "cost": 1200
+  },
+  {
+    "item": "Linen Bedding Set",
+    "cost": 700
+  },
+  {
+    "item": "Area Rug (Neutral)",
+    "cost": 600
+  },
+  {
+    "item": "Woven Accent Chair",
+    "cost": 550
+  }
+]

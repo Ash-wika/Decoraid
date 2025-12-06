@@ -1,0 +1,37 @@
+Testing Gemini Integration...
+Testing with image: C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\uploads\1764696218444-bedroom_minimalist_33.jpg
+1. Testing generateRoom (Expect fallback/mock)...
+Gemini Renovation Description: **Theme: Modern | Dimensions: 10x10**
+
+A sophisticated renovation focusing on clean lines, integrated features, and warmth.
+
+*   **Walls:** A subtle, textured plaster or fluted wood feature wall behind the bed. Remaining walls in a soft, warm white.
+*   **Lighting:** Integrated recessed ceiling lights with dimmers, plus elegant, wall-mounted bedside sconces for a clutter-free look.
+*   **Storage:** A custom, floor-to-ceiling built-in wardrobe with handleless doors along one wall to maximize the compact space.
+*   **Windows:** Automated sheer roller blinds for seamless light control, complementing the existing large window.
+*   **Flooring:** Refinished or new wide-plank natural oak flooring for warmth and continuity.
+*   **Details:** Minimalist floating bedside tables and a new, low-profile bed frame with integrated USB ports.
+Generate Result: generated-gemini-1764702588804.jpg
+2. Testing estimateCost (Expect JSON result)...
+Cost Result: [
+  {
+    "item": "Bed Frame",
+    "cost": 750
+  },
+  {
+    "item": "Bedding Set",
+    "cost": 300
+  },
+  {
+    "item": "Area Rug",
+    "cost": 250
+  },
+  {
+    "item": "Paint (Walls)",
+    "cost": 150
+  },
+  {
+    "item": "Wall Art",
+    "cost": 200
+  }
+]

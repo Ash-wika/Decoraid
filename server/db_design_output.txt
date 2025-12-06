@@ -1,0 +1,12 @@
+Latest Design: {
+  id: 8,
+  user_id: 2,
+  original_image: '1764701967747-bedroom_minimalist_33.jpg',
+  generated_image: '1764701967747-bedroom_minimalist_33.jpg',
+  theme: 'industrial',
+  dimensions: '12*14 ft',
+  cost_estimation: '[{"item":"Estimation Failed","cost":0}]',
+  created_at: '2025-12-02 18:59:36'
+}
+Cost Estimation Type: string
+Cost Estimation Value: [{"item":"Estimation Failed","cost":0}]

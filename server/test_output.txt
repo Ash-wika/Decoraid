@@ -1,0 +1,3 @@
+FAIL: Users table does not exist!
+Signup Status: 500
+Signup Data: { error: 'Internal server error' }

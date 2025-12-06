@@ -1,0 +1,27 @@
+Testing Gemini Integration...
+1. Testing generateRoom (Expect fallback/mock)...
+Gemini Generation Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent: [400 Bad Request] Unable to process input image. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+    at handleResponseNotOk (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\@google\generative-ai\dist\index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\@google\generative-ai\dist\index.js:403:9)
+    at async generateContent (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\@google\generative-ai\dist\index.js:867:22)
+    at async Object.generateRoom (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\src\services\ai.service.js:34:24)
+    at async test (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\test_gemini.js:19:24) {
+  status: 400,
+  statusText: 'Bad Request',
+  errorDetails: undefined
+}
+Generate Result: test_gemini.jpg
+2. Testing estimateCost (Expect JSON result)...
+Gemini Cost Estimation Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent: [400 Bad Request] Unable to process input image. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+    at handleResponseNotOk (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\@google\generative-ai\dist\index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\@google\generative-ai\dist\index.js:403:9)
+    at async generateContent (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\@google\generative-ai\dist\index.js:867:22)
+    at async Object.estimateCost (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\src\services\ai.service.js:73:24)
+    at async test (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\test_gemini.js:23:22) {
+  status: 400,
+  statusText: 'Bad Request',
+  errorDetails: undefined
+}
+Cost Result: [ { item: 'Estimation Failed', cost: 0 } ]

@@ -1,0 +1,12 @@
+Sending request...
+Request Failed: TypeError: fetch failed
+    at node:internal/deps/undici/undici:11754:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async test (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\test_generation.js:20:26) {
+  cause: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1114:18)
+      at afterConnectMultiple (node:net:1667:5) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}

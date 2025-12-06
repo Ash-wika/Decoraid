@@ -1,0 +1,77 @@
+
+Schema:
+[
+  {
+    "cid": 0,
+    "name": "id",
+    "type": "INTEGER",
+    "notnull": 0,
+    "dflt_value": null,
+    "pk": 1
+  },
+  {
+    "cid": 1,
+    "name": "email",
+    "type": "TEXT",
+    "notnull": 1,
+    "dflt_value": null,
+    "pk": 0
+  },
+  {
+    "cid": 2,
+    "name": "password",
+    "type": "TEXT",
+    "notnull": 1,
+    "dflt_value": null,
+    "pk": 0
+  },
+  {
+    "cid": 3,
+    "name": "created_at",
+    "type": "DATETIME",
+    "notnull": 0,
+    "dflt_value": "CURRENT_TIMESTAMP",
+    "pk": 0
+  },
+  {
+    "cid": 4,
+    "name": "name",
+    "type": "TEXT",
+    "notnull": 0,
+    "dflt_value": null,
+    "pk": 0
+  }
+]
+
+Users:
+[
+  {
+    "id": 1,
+    "email": "test_node_1764697522561@example.com",
+    "password": "password123",
+    "created_at": "2025-12-02 17:45:22",
+    "name": null
+  },
+  {
+    "id": 2,
+    "email": "2k22.cse.2211381@gmail.com",
+    "password": "Ashutosh@28",
+    "created_at": "2025-12-02 17:48:47",
+    "name": null
+  },
+  {
+    "id": 3,
+    "email": "2k22.cse.221532@gmail.com",
+    "password": "Ashutosh@28",
+    "created_at": "2025-12-02 17:58:36",
+    "name": null
+  },
+  {
+    "id": 4,
+    "email": "ashutosh.a.contact@gmail.com",
+    "password": "Ashutosh@28",
+    "created_at": "2025-12-03 00:02:59",
+    "name": null
+  }
+]
+    

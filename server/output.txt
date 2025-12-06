@@ -1,0 +1,66 @@
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* URL rejected: Malformed input to a URL function
+* closing connection #-1
+curl: (3) URL rejected: Malformed input to a URL function
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* Host localhost:5000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:5000...
+* Established connection to localhost (::1 port 5000) from ::1 port 64130 
+* using HTTP/1.x
+> POST /api/auth/signup HTTP/1.1
+
+> Host: localhost:5000
+
+> User-Agent: curl/8.16.0
+
+> Accept: */*
+
+> Content-Type: application/json
+
+> Content-Length: 2
+
+> 
+
+} [2 bytes data]
+* upload completely sent off: 2 bytes
+< HTTP/1.1 400 Bad Request
+
+< X-Powered-By: Express
+
+< Access-Control-Allow-Origin: *
+
+< Content-Security-Policy: default-src 'none'
+
+< X-Content-Type-Options: nosniff
+
+< Content-Type: text/html; charset=utf-8
+
+< Content-Length: 1267
+
+< Date: Tue, 02 Dec 2025 17:41:20 GMT
+
+< Connection: keep-alive
+
+< Keep-Alive: timeout=5
+
+< 
+
+{ [1267 bytes data]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>SyntaxError: Expected property name or &#39;}&#39; in JSON at position 1 (line 1 column 2)<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\body-parser\lib\types\json.js:92:19)<br> &nbsp; &nbsp;at C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\body-parser\lib\read.js:128:18<br> &nbsp; &nbsp;at AsyncResource.runInAsyncScope (node:async_hooks:206:9)<br> &nbsp; &nbsp;at invokeCallback (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\raw-body\index.js:238:16)<br> &nbsp; &nbsp;at done (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\raw-body\index.js:227:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\raw-body\index.js:287:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (node:events:519:28)<br> &nbsp; &nbsp;at endReadableNT (node:internal/streams/readable:1696:12)<br> &nbsp; &nbsp;at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</pre>
+</body>
+</html>
+
+100  1269  100  1267  100     2  37648     59 --:--:-- --:--:-- --:--:-- 38454
+* Connection #0 to host localhost:5000 left intact

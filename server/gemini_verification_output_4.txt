@@ -1,0 +1,3 @@
+Testing Gemini Integration...
+Uploads dir not found or empty
+No images found in uploads to test with. Please upload an image via the UI first.

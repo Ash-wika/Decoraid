@@ -1,0 +1,57 @@
+Testing generateRoom...
+AI Generation Error: BadRequestError: 400 Billing hard limit has been reached
+    at APIError.generate (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\openai\core\error.js:45:20)
+    at OpenAI.makeStatusError (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\openai\client.js:165:32)
+    at OpenAI.makeRequest (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\node_modules\openai\client.js:333:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Object.generateRoom (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\src\services\ai.service.js:24:26)
+    at async test (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\test_ai_service.js:13:24) {
+  status: 400,
+  headers: HeadersList {
+    cookies: [
+      '__cf_bm=BNqRihwRlXBeKxcwu_4opHnEqjclG.583JcdxmJKdnk-1764700013-1.0.1.1-y.dTSrWLOY_E3njKrJlrpRiX2489LgHoPTt_kd1fsYrUZURJR_d_CALxkAgHFf_eocpTKcKTFJQZU0Uu6uXl4HQZVOQz2sTwxU3Snb2_hBg; path=/; expires=Tue, 02-Dec-25 18:56:53 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+      '_cfuvid=O4.VZoTFTcqVUIKWO7iflBTD3GW.Lcb6oaSAipr93xg-1764700013439-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'
+    ],
+    [Symbol(headers map)]: Map(17) {
+      'date' => [Object],
+      'content-type' => [Object],
+      'content-length' => [Object],
+      'connection' => [Object],
+      'openai-version' => [Object],
+      'openai-organization' => [Object],
+      'openai-project' => [Object],
+      'x-request-id' => [Object],
+      'openai-processing-ms' => [Object],
+      'x-envoy-upstream-service-time' => [Object],
+      'cf-cache-status' => [Object],
+      'set-cookie' => [Object],
+      'strict-transport-security' => [Object],
+      'x-content-type-options' => [Object],
+      'server' => [Object],
+      'cf-ray' => [Object],
+      'alt-svc' => [Object]
+    },
+    [Symbol(headers map sorted)]: [
+      [Array], [Array], [Array],
+      [Array], [Array], [Array],
+      [Array], [Array], [Array],
+      [Array], [Array], [Array],
+      [Array], [Array], [Array],
+      [Array], [Array], [Array]
+    ]
+  },
+  requestID: 'req_65f4ac7b876642fe874efc51c4c488a9',
+  error: {
+    message: 'Billing hard limit has been reached',
+    type: 'image_generation_user_error',
+    param: null,
+    code: 'billing_hard_limit_reached'
+  },
+  code: 'billing_hard_limit_reached',
+  param: null,
+  type: 'image_generation_user_error'
+}
+AI Service Failed: Error: Failed to generate room design
+    at Object.generateRoom (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\src\services\ai.service.js:47:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async test (C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\test_ai_service.js:13:24)

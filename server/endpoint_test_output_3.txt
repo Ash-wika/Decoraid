@@ -1,0 +1,7 @@
+Uploading: C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\uploads\1764696218444-bedroom_minimalist_33.jpg
+Response: {
+  id: 10,
+  originalImage: '1764703015637-1764696218444-bedroom_minimalist_33.jpg',
+  generatedImage: '1764703015637-1764696218444-bedroom_minimalist_33.jpg',
+  costEstimation: [ { item: 'Estimation Failed', cost: 0 } ]
+}

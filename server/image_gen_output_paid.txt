@@ -1,0 +1,5 @@
+Testing Image Generation with gemini-2.5-flash-image (Image + Prompt)...
+Using image: C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\uploads\1764696218444-bedroom_minimalist_33.jpg
+Response received.
+Image data found! MimeType: image/png
+Saved to test_gen_image_v2.png

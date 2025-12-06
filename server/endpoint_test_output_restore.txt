@@ -1,0 +1,264 @@
+Uploading: C:\Users\warto\.gemini\antigravity\playground\silver-lunar\server\uploads\1764696218444-bedroom_minimalist_33.jpg
+Error Message: connect ECONNREFUSED 127.0.0.1:5000
+No response received. Request info: <ref *1> ClientRequest {
+  _events: [Object: null prototype] {
+    response: [Function: bound onceWrapper] { listener: [Function (anonymous)] },
+    abort: [Function (anonymous)],
+    aborted: [Function (anonymous)],
+    connect: [Function (anonymous)],
+    error: [Function (anonymous)],
+    socket: [Function (anonymous)],
+    timeout: [Function (anonymous)]
+  },
+  _eventsCount: 7,
+  _maxListeners: undefined,
+  outputData: [],
+  outputSize: 0,
+  writable: true,
+  destroyed: false,
+  _last: false,
+  chunkedEncoding: false,
+  shouldKeepAlive: true,
+  maxRequestsOnConnectionReached: false,
+  _defaultKeepAlive: true,
+  useChunkedEncodingByDefault: true,
+  sendDate: false,
+  _removedConnection: false,
+  _removedContLen: false,
+  _removedTE: false,
+  strictContentLength: false,
+  _contentLength: '12428',
+  _hasBody: true,
+  _trailer: '',
+  finished: false,
+  _headerSent: true,
+  _closed: false,
+  _header: 'POST /api/design/generate HTTP/1.1\r\n' +
+    'Accept: application/json, text/plain, */*\r\n' +
+    'Content-Type: multipart/form-data; boundary=--------------------------441866daaa34b90dcb94c8ea\r\n' +
+    'User-Agent: axios/1.13.2\r\n' +
+    'Content-Length: 12428\r\n' +
+    'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+    'Host: 127.0.0.1:5000\r\n' +
+    'Connection: keep-alive\r\n' +
+    '\r\n',
+  _keepAliveTimeout: 0,
+  _onPendingData: [Function: nop],
+  agent: Agent {
+    _events: [Object: null prototype] {
+      free: [Function (anonymous)],
+      newListener: [Function: maybeEnableKeylog]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    defaultPort: 80,
+    protocol: 'http:',
+    options: [Object: null prototype] {
+      keepAlive: true,
+      scheduling: 'lifo',
+      timeout: 5000,
+      noDelay: true,
+      path: null
+    },
+    requests: [Object: null prototype] {},
+    sockets: [Object: null prototype] { '127.0.0.1:5000:': [Array] },
+    freeSockets: [Object: null prototype] {},
+    keepAliveMsecs: 1000,
+    keepAlive: true,
+    maxSockets: Infinity,
+    maxFreeSockets: 256,
+    scheduling: 'lifo',
+    maxTotalSockets: Infinity,
+    totalSocketCount: 1,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  },
+  socketPath: undefined,
+  method: 'POST',
+  maxHeaderSize: undefined,
+  insecureHTTPParser: undefined,
+  joinDuplicateHeaders: undefined,
+  path: '/api/design/generate',
+  _ended: false,
+  res: null,
+  aborted: false,
+  timeoutCb: [Function: emitRequestTimeout],
+  upgradeOrConnect: false,
+  parser: null,
+  maxHeadersCount: null,
+  reusedSocket: false,
+  host: '127.0.0.1',
+  protocol: 'http:',
+  _redirectable: Writable {
+    _events: {
+      close: undefined,
+      error: [Function: handleRequestError],
+      prefinish: undefined,
+      finish: undefined,
+      drain: undefined,
+      response: [Function: handleResponse],
+      socket: [Array],
+      abort: undefined
+    },
+    _writableState: WritableState {
+      highWaterMark: 16384,
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 0,
+      bufferedIndex: 0,
+      pendingcb: 0,
+      [Symbol(kState)]: 17580812,
+      [Symbol(kBufferedValue)]: null
+    },
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'http:',
+      path: '/api/design/generate',
+      method: 'POST',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      family: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      http2Options: undefined,
+      hostname: '127.0.0.1',
+      port: '5000',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/api/design/generate'
+    },
+    _ended: false,
+    _ending: false,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 180,
+    _requestBodyBuffers: [ [Object] ],
+    _eventsCount: 3,
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: [Circular *1],
+    _currentUrl: 'http://127.0.0.1:5000/api/design/generate',
+    _timeout: null,
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  [Symbol(shapeMode)]: false,
+  [Symbol(kCapture)]: false,
+  [Symbol(kBytesWritten)]: 0,
+  [Symbol(kNeedDrain)]: false,
+  [Symbol(corked)]: 0,
+  [Symbol(kChunkedBuffer)]: [],
+  [Symbol(kChunkedLength)]: 0,
+  [Symbol(kSocket)]: Socket {
+    connecting: false,
+    _hadError: true,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _events: {
+      close: [Array],
+      error: [Function: socketErrorListener],
+      prefinish: undefined,
+      finish: undefined,
+      drain: [Function: ondrain],
+      data: undefined,
+      end: [Function: onReadableStreamEnd],
+      readable: undefined,
+      connect: [Array],
+      free: [Function: onFree],
+      timeout: [Array],
+      agentRemove: [Function: onRemove]
+    },
+    _readableState: ReadableState {
+      highWaterMark: 16384,
+      buffer: [],
+      bufferIndex: 0,
+      length: 0,
+      pipes: [],
+      awaitDrainWriters: null,
+      [Symbol(kState)]: 59779574,
+      [Symbol(kErroredValue)]: [Error]
+    },
+    _writableState: WritableState {
+      highWaterMark: 16384,
+      length: 498,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 498,
+      bufferedIndex: 0,
+      pendingcb: 1,
+      [Symbol(kState)]: 118260214,
+      [Symbol(kBufferedValue)]: null,
+      [Symbol(kWriteCbValue)]: [Function: nop],
+      [Symbol(kErroredValue)]: [Error]
+    },
+    allowHalfOpen: false,
+    _maxListeners: undefined,
+    _eventsCount: 8,
+    _sockname: null,
+    _pendingData: 'POST /api/design/generate HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: multipart/form-data; boundary=--------------------------441866daaa34b90dcb94c8ea\r\n' +
+      'User-Agent: axios/1.13.2\r\n' +
+      'Content-Length: 12428\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: 127.0.0.1:5000\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n' +
+      '----------------------------441866daaa34b90dcb94c8ea\r\n' +
+      'Content-Disposition: form-data; name="image"; filename="1764696218444-bedroom_minimalist_33.jpg"\r\n' +
+      'Content-Type: image/jpeg\r\n' +
+      '\r\n',
+    _pendingEncoding: 'utf8',
+    server: null,
+    _server: null,
+    timeout: 0,
+    parser: null,
+    _httpMessage: [Circular *1],
+    [Symbol(async_id_symbol)]: 15,
+    [Symbol(kHandle)]: null,
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: Timeout {
+      _idleTimeout: -1,
+      _idlePrev: null,
+      _idleNext: null,
+      _idleStart: 1566,
+      _onTimeout: null,
+      _timerArgs: undefined,
+      _repeat: null,
+      _destroyed: true,
+      [Symbol(refed)]: false,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 14,
+      [Symbol(triggerId)]: 0
+    },
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: true,
+    [Symbol(kSetKeepAliveInitialDelay)]: 60,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  [Symbol(kOutHeaders)]: [Object: null prototype] {
+    accept: [ 'Accept', 'application/json, text/plain, */*' ],
+    'content-type': [
+      'Content-Type',
+      'multipart/form-data; boundary=--------------------------441866daaa34b90dcb94c8ea'
+    ],
+    'user-agent': [ 'User-Agent', 'axios/1.13.2' ],
+    'content-length': [ 'Content-Length', '12428' ],
+    'accept-encoding': [ 'Accept-Encoding', 'gzip, compress, deflate, br' ],
+    host: [ 'Host', '127.0.0.1:5000' ]
+  },
+  [Symbol(errored)]: null,
+  [Symbol(kHighWaterMark)]: 16384,
+  [Symbol(kRejectNonStandardBodyWrites)]: false,
+  [Symbol(kUniqueHeaders)]: null
+}
